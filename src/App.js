@@ -5,18 +5,19 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={`${process.env.PUBLIC_URL}/img/Lionel.png`}
+         class="lionel" 
+         alt="picture of lionel" />
+        <h1>Hello....! </h1>
+        <audio controls>
+          <source src={`${process.env.PUBLIC_URL}/hello/Lionel-Richie-Hello.mp3`} type='audio/mpeg'></source>
+          Sorry, but it seems that lionel can't sing hello right now!!
+        </audio>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          is it me you looking for? <br/>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+        {/* this is made just for fun */}
       </header>
     </div>
   );
